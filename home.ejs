@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+</head>
+<body>
+
+    <h1>Welcome to the Home Page</h1>
+
+    <% if (posts.length > 0) { %>
+
+        <% posts.forEach(element => { %>
+
+            <h1><%= element.title %></h1>
+            <p><%= element.content %></p>
+
+        <% }) %>
+
+    <% } else { %>
+
+        <h1>No posts found</h1>
+
+    <% } %>
+
+</body>
+</html>
+

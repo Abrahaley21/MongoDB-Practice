@@ -1,0 +1,5 @@
+const Homepage = (req,res) => {
+    res.json({ message: 'Hello, World!' })
+}
+
+module.exports = { Homepage }
